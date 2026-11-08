@@ -24,6 +24,7 @@ Ostad Data Engineering Bootcamp, ব্যাচ ০১ — অক্টোব�
 - Git
 - GitHub
 - Python (Learning)
+- Git Branching and Pull Requests
 
 ## যোগাযোগ
 
