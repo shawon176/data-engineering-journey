@@ -1,37 +1,35 @@
 # Week 02 - Linux Commands Practice
 
-## 1. pwd
-বর্তমান Working Directory দেখায়।
+1. grep "ERROR" app.log
 
-## 2. ls
-Folder-এর ভিতরে থাকা ফাইল ও Folder দেখায়।
+2. grep -c "ERROR" app.log
 
-## 3. ls -la
-Hidden files সহ বিস্তারিত তথ্য দেখায়।
+3. grep -i "error" app.log
 
-## 4. cd
-এক Directory থেকে অন্য Directory-তে যেতে ব্যবহার হয়।
+4. grep -v "INFO" app.log
 
-## 5. mkdir
-নতুন Directory তৈরি করে।
+5. grep -n "ERROR" app.log
 
-## 6. cat
-ফাইলের ভিতরের Content দেখায়।
+6. grep "^2026-10-17" app.log
 
-## 7. cp
-ফাইল Copy করে।
+7. grep -r "TODO" .
 
-## 8. mv
-ফাইল Move বা Rename করে।
+8. cut -c1-10
 
-## 9. rm
-ফাইল Delete করে।
+9. cut -d',' -f3
 
-## 10. grep
-ফাইলের ভিতরে নির্দিষ্ট Text খুঁজে বের করে।
+10. cut -d'|' -f2
 
-## 11. wc
-ফাইলের Line, Word এবং Character গণনা করে।
+11. sort
 
-## 12. git
-Version Control System ব্যবহার করতে সাহায্য করে।
+12. sort -rn
+
+13. uniq -c
+
+14. tr -d ' '
+
+15. grep "| ERROR |" app.log | cut -c1-10 | sort | uniq -c | sort -rn
+
+16. grep "| ERROR |" app.log > errors.log
+
+17. echo "আরেকটা লাইন" >> errors.log
